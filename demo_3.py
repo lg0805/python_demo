@@ -13,9 +13,9 @@ SECRET_KEY = 'EB6WAiCwthSz4xULvRK1P62SfSCLtCTG'
 client = AipFace(APP_ID, API_KEY, SECRET_KEY)
 
 image = open('m_5.jpeg', 'rb').read()
-base = base64.b64encode(image)
-image1 = str(base, encoding='utf-8')
-imageType = 'BASE64'
+base = base64.b64encode(image)          # 将图像文件按BASE64编码
+image1 = str(base, encoding='utf-8')    # 
+imageType = 'BASE64'                    # 指定图像编码为BASE64
 
 """ 可选参数 """
 options = {}
