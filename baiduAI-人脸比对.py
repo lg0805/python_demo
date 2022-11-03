@@ -1,6 +1,3 @@
-# @FileName : demo_3
-# @Time     : 2022/11/3 21:44
-# @Author   : ligg
 """人脸对比"""
 import base64
 
@@ -18,13 +15,12 @@ result = client.match([
         'image_type': 'BASE64',
     },
     {
-        'image': base64.b64encode(open('p_22.png', 'rb').read()).decode(),
+        'image': base64.b64encode(open('p_12.png', 'rb').read()).decode(),
         'image_type': 'BASE64',
     }
 ])
 
 res = result['result']['score']
-
 if res < 50:
     print('相似度', int(res), '%, 不同能是同一个人')
 elif res < 85:
