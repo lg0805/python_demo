@@ -15,7 +15,7 @@ result = client.match([
         'image_type': 'BASE64',
     },
     {
-        'image': base64.b64encode(open('p_12.png', 'rb').read()).decode(),
+        'image': base64.b64encode(open('p_22.png', 'rb').read()).decode(),
         'image_type': 'BASE64',
     }
 ])

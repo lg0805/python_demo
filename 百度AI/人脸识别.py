@@ -6,13 +6,13 @@
 import base64
 from aip import AipFace
 
-APP_ID = '28208***'
-API_KEY = 'BGMffmzxPIWg6YrQnBrv****'
-SECRET_KEY = 'EB6WAiCwthSz4xULvRK1P62SfSCL****'
+APP_ID = '28223164'
+API_KEY = 'GiEBCXDdnFwRpPeeRGdiGTVk'
+SECRET_KEY = 'K2jHvXgTzGChiUMG3TOPPPEeQ6zxFP5A'
 
 client = AipFace(APP_ID, API_KEY, SECRET_KEY)
 
-image = open('m_5.jpeg', 'rb').read()
+image = open('p_21.png', 'rb').read()
 base = base64.b64encode(image)          # 将图像文件按BASE64编码
 image1 = str(base, encoding='utf-8')    # 
 imageType = 'BASE64'                    # 指定图像编码为BASE64
