@@ -1,8 +1,6 @@
-# @FileName : sort_demo
+# @FileName : magic_bubble_sort
 # @Time     : 2022/11/28 14:07
 # @Author   : ligg
-
-
 from typing import List
 
 numbers = [23, 32, 1, 3, 4, 19, 20, 2, 4]
@@ -27,10 +25,10 @@ def magic_bubble_sort(numbers: List[int]):
             elif current_is_even == next_is_even and current > next_:
                 should_swap = True
             if should_swap:
-                numbers[i], numbers[i+1] = numbers[i+1], numbers[i]
+                numbers[i], numbers[i + 1] = numbers[i + 1], numbers[i]
         stop_position -= 1
-
     return numbers
 
 
 print(magic_bubble_sort(numbers))
+# [1, 3, 19, 23, 2, 4, 4, 20, 32]
