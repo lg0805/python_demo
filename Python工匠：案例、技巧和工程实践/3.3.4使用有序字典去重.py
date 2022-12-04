@@ -13,7 +13,9 @@ nums = [10, 2, 3, 21, 10, 3, 11]
 # 2.它的键不会复复
 from collections import OrderedDict
 print(list(OrderedDict.fromkeys(nums).keys()))
+# [10, 2, 3, 21, 11]
 
 
 # dict() 去重并保留顺序
 print(list({num: 0 for num in nums}.keys()))
+# [10, 2, 3, 21, 11]
