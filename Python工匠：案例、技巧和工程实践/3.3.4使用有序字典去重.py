@@ -19,3 +19,4 @@ print(list(OrderedDict.fromkeys(nums).keys()))
 # dict() 去重并保留顺序
 print(list({num: 0 for num in nums}.keys()))
 # [10, 2, 3, 21, 11]
+３
